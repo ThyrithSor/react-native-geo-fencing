@@ -4,7 +4,7 @@ Native modules to determine if a location is within defined geographical boundar
 
 ### Usage
 ```js
-import GeoFencing from 'react-native-geo-fencing';
+import GeoFencing from '@thyrith/react-native-geo-fencing';
 ```
 ```js
 // with navigator geolocation
@@ -57,7 +57,7 @@ componentDidMount() {
 ```
 
 ### Installation
-    $ npm install --save react-native-geo-fencing
+    $ npm install --save @thyrith/react-native-geo-fencing
 #### ios
 Within ```ios/``` directory of your react-native app:
 
@@ -71,7 +71,7 @@ Within ```ios/``` directory of your react-native app:
 
   target 'yourAppTarget' do
     pod 'React', path: '../node_modules/react-native'
-    pod 'react-native-geo-fencing', path: '../node_modules/react-native-geo-fencing'
+    pod 'react-native-geo-fencing', path: '../node_modules/@thyrith/react-native-geo-fencing'
   end
   ```
 
@@ -80,7 +80,7 @@ Within ```ios/``` directory of your react-native app:
   platform :ios, '7.0'
 
   pod 'React', path: '../node_modules/react-native'
-  pod 'react-native-geo-fencing', path: '../node_modules/react-native-geo-fencing'
+  pod 'react-native-geo-fencing', path: '../node_modules/@thyrith/react-native-geo-fencing'
   ```
 
 2. Then
@@ -97,15 +97,15 @@ Within ```ios/``` directory of your react-native app:
 #### android
 1. Add the following to ```android/settings.gradle```
   ```java
-  include ':react-native-geo-fencing'
-  project(':react-native-geo-fencing').projectDir = new File(settingsDir, '../node_modules/react-native-geo-fencing/android')
+  include ':@thyrith_react-native-geo-fencing'
+  project(':@thyrith_react-native-geo-fencing').projectDir = new File(settingsDir, '../node_modules/@thyrith/react-native-geo-fencing/android')
   ```
 
 2. Add the following to ```android/app/build.gradle```
   ```java
   dependencies {
     // ...
-    compile project(':react-native-geo-fencing')
+    compile project(':thyrith_react-native-geo-fencing')
   }
   ```
 
